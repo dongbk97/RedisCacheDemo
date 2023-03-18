@@ -25,5 +25,18 @@ public class StudentController {
         return ResponseEntity.ok(studentRepo.getStudent(id));
     }
 
+    @GetMapping("all")
+    public ResponseEntity<?> getAllStudent(){
+
+        return ResponseEntity.ok(studentRepo.getAllStudent());
+    }
+
+
+    @GetMapping("clearAll")
+    public ResponseEntity<?> clearAllCache(){
+
+        return ResponseEntity.ok(studentRepo.clearAllCache());
+    }
+
 
 }
